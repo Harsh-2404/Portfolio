@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/197d232660.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo_1.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Harsh</span><br>Srivastav From India</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------------------- about -------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Harsh Srivastav, a passionate Full Stack Developer with a strong emphasis on creating dynamic and responsive web applications. With a deep understanding of both frontend and backend technologies, I strive to build seamless, user-friendly, and efficient applications.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Development</span><br>MERN Stack Development</li>
+                            <li><span>Frontend Development</span><br>HTML, CSS, JavaScript, Bootstrap, React.js</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Cloud Platforms</span><br>Expertise in AWS, and Google Cloud Platform.</li>
+                            <li><span>Containerization</span><br>Skilled in Docker </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>12th June 2023 - 24th July 2023</span><br>Front End Development Internship at IBM SkillsBuild.</li>
+                            <li><span>May - July</span><br>AI-ML Virtual Internship at AWS academy.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>B.tech in CSE from KIET Group of Institutions, Ghaziabad.</li>
+                            <li><span>2018-2021</span><br>Diploma in Civil Engineering from Government Polytechnic Sant Kabir Nagar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!----------------------------- Services -------------------------------------->
+
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I specialize in crafting dynamic web experiences using HTML, CSS, and JavaScript, enhanced with Bootstrap for responsive design. My expertise extends to full-stack development with the MERN (MongoDB, Express.js, React.js, Node.js) stack, ensuring robust and scalable applications from front to back.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I am passionate about creating intuitive and engaging user interfaces (UI) and delightful user experiences (UX) across web applications. From wireframing to prototyping, I focus on blending aesthetic appeal with usability, ensuring seamless interaction for every user.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-------------------------- Portfolio ------------------------>
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>File Sharing Application [MERN]</h3>
+                        <p>Developed a scalable file-sharing application, enabling users to securely upload, share, and
+                            manage files in the cloud. Implemented RESTful API services with Node.js and Express, leveraged MongoDB for data persistence, and
+                            used React for a dynamic and responsive front-end. Technologies Used: <b>MongoDB, Express.js, React.js, Node.js.</b></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>ShopSphere</h3>
+                        <p>Developed an e-commerce website using HTML, CSS, and JavaScript. Enhanced skills in
+                            front-end development and web technologies. Demonstrated ability to create dynamic and user-friendly interfaces for online shopping
+                            experiences.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>  Developed a responsive portfolio website to showcase my projects and skills. Utilized HTML and CSS for layout
+                            and design, with JavaScript to enhance interactivity. Implemented features like a dynamic project gallery, responsive design for all
+                            devices, and cross-browser compatibility.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+
+     <!---------------------------- Contact ---------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>harsh.sri7355@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+919792515775</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/itzharsh/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100028920982126"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/HarshSri7355" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Harsh_Srivastav_Resume_1.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Harsh Srivastav  <i class="fa-solid fa-heart"></i>.&nbsp;&nbsp;All Rights Reserved.</p>
+        </div>
+     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var menu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            menu.style.right = "0";
+        }
+        function closemenu(){
+            menu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- copy from the github link: https://github.com/jamiewilson/form-to-google-sheets -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzvjTInwEBlypyRKTIxYnLnspNdKv1CV4t6JoNintJUhs1f50vdSWTRtitI4MP4QTQQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 4000)
+                form.reset()
+            })
+            
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
