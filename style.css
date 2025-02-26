@@ -98,10 +98,12 @@ nav ul li a:hover::after{
 
 .about-col-1{
     flex-basis: 35%;
+    padding-top: 1rem;
 }
 
 .about-col-1 img{
-    width: 100%;
+    width: 103%;
+    height: 73vh;
     border-radius: 15px;
 }
 
@@ -419,6 +421,13 @@ nav .fas{
     .about-col-1{
         margin-bottom: 30px;
     }
+
+    .about-col-1 img{
+        width: 100%;
+        height: 60vh;
+        /* border-radius: 15px; */
+    }
+    
     .about-col-2{
         font-size: 14px;
     }
